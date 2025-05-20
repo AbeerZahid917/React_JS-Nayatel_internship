@@ -19,7 +19,8 @@ React JS can be used to make single page applications
 * tab = tabIndex
 * curly brackets for javascript - hello {name (var above in the code)}
 
-* // import logo from './logo.svg'; // this was a picture
+
+import logo from './logo.svg'; // this was a picture
 import './App.css';
 
 let name = "abeer"; 
@@ -32,7 +33,6 @@ function App()
         <li> About </li>
         <li> Cntact </li>
       </nav>
-
       <div className="container"> 
         <h1>
           hello {name}

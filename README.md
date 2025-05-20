@@ -20,19 +20,22 @@ React JS can be used to make single page applications
 * curly brackets for javascript - hello {name (var above in the code)}
 
 
-import logo from './logo.svg'; // this was a picture
+import logo from './logo.svg';
 import './App.css';
 
 let name = "abeer"; 
-function App() 
-{
-  return (
-    <>
+
+function App() {
+
+    return (
+  
+      <>
       <nav> 
         <li> Home </li>
         <li> About </li>
         <li> Cntact </li>
       </nav>
+      
       <div className="container"> 
         <h1>
           hello {name}

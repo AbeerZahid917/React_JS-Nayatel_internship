@@ -22,14 +22,13 @@ React JS can be used to make single page applications
 
 import logo from './logo.svg';
 import './App.css';
-
-let name = "abeer"; 
+let name = "abeer";
 
 function App() {
 
-    return (
+  return (
   
-      <>
+    <>
       <nav> 
         <li> Home </li>
         <li> About </li>

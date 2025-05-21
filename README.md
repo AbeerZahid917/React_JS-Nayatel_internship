@@ -55,14 +55,14 @@ export default App;
 ### Video 6 - Part 2 of textutils project
 * after making a folder called components in src, make separate folders for each component
 * Begin the file with rfc then tab, that just gives the default template (shortcut)
-* **<Navbar title="TextUtils" />** this is the app.js file, basically shows both how to use files or components made and the title part is the prop 
+* **Navbar title="TextUtils" />** this is the app.js file, basically shows both how to use files or components made and the title part is the prop 
 * then in the file with navbar, add props to the arguments and then props.title where the title of the navbar is supposed to go in curly brackets. 
 * you can add more stuff and keep modifying the func file to match the changes.
 * Dont need to add more arguments just do {props.whatever}
 * do not change the props in the function
 
 ### Video 7
-* <div className="container" > for a centralized whatever this is </div>
+* **div className="container" >** for a centralized whatever this is **/div>**
 * my-3 is for margin
 * for button = **button.btn.btn.priamry** then the tab
 * for handling events, make an event handler function

@@ -1,5 +1,7 @@
 // import logo from './logo.svg'; // this was a picture
 import './App.css';
+import React from 'react';
+
 
 
 let name = "abeer"; 

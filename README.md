@@ -9,7 +9,7 @@ React JS can be used to make single page applications
 * run **npx create-react-app my-app** in the terminal to make a react app for that project/run, cuz otherwise it'll take up unnecessary space
 * **npx create-react-app <project_name>**, this creates a project file
 * component = template sorta
-* props = the details themselves
+* props = the details themselves, the properties
 * state = what the details are and mean
 * App.js makes the interface; basically what it looks like on the internet
 * **npm start** runs it so it shows up on google
@@ -52,3 +52,11 @@ function App() {
 }
 export default App;
 
+### Video 6 - Part 2 of textutils project
+* after making a folder called components in src, make separate folders for each component
+* Begin the file with rfc then tab, that just gives the default template (shortcut)
+* **<Navbar title="TextUtils" />** this is the app.js file, basically shows both how to use files or components made and the title part is the prop 
+* then in the file with navbar, add props to the arguments and then props.title where the title of the navbar is supposed to go in curly brackets. 
+* you can add more stuff and keep modifying the func file to match the changes.
+* Dont need to add more arguments just do {props.whatever}
+* do not change the props in the function

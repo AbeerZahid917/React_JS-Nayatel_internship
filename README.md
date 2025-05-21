@@ -60,3 +60,18 @@ export default App;
 * you can add more stuff and keep modifying the func file to match the changes.
 * Dont need to add more arguments just do {props.whatever}
 * do not change the props in the function
+
+### Video 7
+* <div className="container" > for a centralized whatever this is </div>
+* my-3 is for margin
+* for button = **button.btn.btn.priamry** then the tab
+* for handling events, make an event handler function
+* state is just whats written maybe, like text or set text
+* to turn to upper case:
+      const handleUpClick = ()=>{
+        console.log("uppercase was clicked" + text);
+        let newText = text.toUpperCase();
+        setText(newText)
+      }  
+* useState hook helps us make state variables like:
+      const [text, setText] = useState("Enter text here"); // hook

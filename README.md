@@ -14,7 +14,7 @@ React JS can be used to make single page applications
 * App.js makes the interface; basically what it looks like on the internet
 * **npm start** runs it so it shows up on google
 
-### Video 4 - JSX
+## Video 4 - JSX
 * its basically html, but class is replaced with classname
 * tab = tabIndex
 * curly brackets for javascript - hello {name (var above in the code)}
@@ -52,7 +52,7 @@ function App() {
 }
 export default App;
 
-### Video 6 - Part 2 of textutils project
+## Video 6 - Part 2 of textutils project
 * after making a folder called components in src, make separate folders for each component
 * Begin the file with rfc then tab, that just gives the default template (shortcut)
 * **Navbar title="TextUtils" />** this is the app.js file, basically shows both how to use files or components made and the title part is the prop 
@@ -61,7 +61,7 @@ export default App;
 * Dont need to add more arguments just do {props.whatever}
 * do not change the props in the function
 
-### Video 7
+## Video 7
 * **div className="container" >** for a centralized whatever this is **/div>**
 * my-3 is for margin
 * for button = **button.btn.btn.priamry** then the tab

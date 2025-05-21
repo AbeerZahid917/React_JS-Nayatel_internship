@@ -75,3 +75,14 @@ export default App;
       }  
 * useState hook helps us make state variables like:
       const [text, setText] = useState("Enter text here"); // hook
+
+## Video 8
+* for word count:
+    {text.split(" ").length}
+* for character count:
+    {text.length}
+* for minutes to read multiply the characters with 0.008
+* preview im code
+* to lowercase in code
+* mx-2 to create space between the two case buttons (in code btw)
+* this to the first line in navbar for a dark colored navbar **nav className="navbar navbar-expand-lg navbar-dark bg-dark">**

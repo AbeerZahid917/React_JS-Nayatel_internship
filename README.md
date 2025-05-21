@@ -86,3 +86,16 @@ export default App;
 * to lowercase in code
 * mx-2 to create space between the two case buttons (in code btw)
 * this to the first line in navbar for a dark colored navbar **nav className="navbar navbar-expand-lg navbar-dark bg-dark">**
+
+## Video 9
+* in code buttons:
+    * to lowercase
+    * to uppercase
+    * capitalize first letter
+    * clear text
+    * copy text
+
+## Video 10
+* how to make an about us drop down text sorta thing
+* add btn-secondary etc to change the button color
+* light mode and dark mode using objects + states 

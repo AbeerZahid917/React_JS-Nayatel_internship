@@ -11,7 +11,7 @@ function App()
 {
   const [mode, setMode] = useState('light'); // whether dark mode is enabled or not
   const [alert, setAlert] = useState(null);
-
+  // const [theme, setTheme] = useState('light'); // multiple modes
 
 
   const toggleMode = ()=>{
@@ -32,6 +32,37 @@ function App()
   }
 
 
+
+  const changeTheme = (newTheme) => {
+    setMode(newTheme);
+
+    if (newTheme === 'light')
+    {
+      document.body.style.backgroundColor = 'white';
+      document.body.style.textColor = "black";
+      showAlert("light mode has been enabled", "success");
+    }
+    else if (newTheme === "dark")
+    {
+      document.body.style.backgroundColor = 'rgb(74, 74, 74)';
+      document.body.style.textColor = "white";
+      showAlert("dark mode has been enabled", "success");
+    }
+    else if (newTheme === "blue")
+    {
+      document.body.style.backgroundColor = 'rgb(44, 32, 117)';
+      document.body.style.textColor = "white";
+      showAlert("blue mode has been enabled", "success");
+    }
+    else if (newTheme === "green")
+    {
+      document.body.style.backgroundColor = 'rgb(45, 118, 66)';
+      document.body.style.textColor = "white";
+      showAlert("green mode has been enabled", "success");
+    }
+  }
+
+
   const showAlert = (message, type) =>{
     setAlert({
       msg: message,
@@ -48,11 +79,11 @@ function App()
 
   return (
     <>
-      <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/>
+      <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} changeTheme={changeTheme}/>
       <Alert alert={alert} />
 
       <div className="container">
-        <TextForm showAlert={showAlert} heading= "ENTER THE TEXT TO ANALYZE" mode={mode}/> 
+        <TextForm changeTheme={changeTheme} showAlert={showAlert} heading= "ENTER THE TEXT TO ANALYZE" mode={mode}/> 
         <About/>
       </div>
     </>

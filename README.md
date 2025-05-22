@@ -118,3 +118,9 @@ export default App;
 * use props.alert && div> etc so that if its null it doesnt give an error aage
 * method to capitalize the first letter in the alert
 * to get alert for all the buttons in the text func, pass showAlert to the textform thing in APP.js and in then add the props.showAlert in each func in textform
+
+## Video 14
+* fixed the text issue
+* added multiple different options for bg color
+* I used a different and more long-winded approach and made a drop-down 
+* in video 20, he made squares in the navbar that if you press, the mode changes, a very different implementation, also smaller

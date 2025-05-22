@@ -124,3 +124,9 @@ export default App;
 * added multiple different options for bg color
 * I used a different and more long-winded approach and made a drop-down 
 * in video 20, he made squares in the navbar that if you press, the mode changes, a very different implementation, also smaller
+
+## Video 15
+* changed the title in index.html in content=
+* changed the logo
+* get a png image then convert it to a fav icon, then extract from the zip file you get, then add to the public file and update path in the index.html file
+* if you want (you probably wont want to) to change the title of the page everytime you use a func then just add document.title = "textutils-dark mode enabled" for eg within that function 

@@ -8,11 +8,13 @@ export default function TextForm(props) {
     const handleUpClick = ()=>{
         let newText = text.toUpperCase();
         setText(newText);
+        props.showAlert("converted to uppercase", "success");
     }  
 
     const handleDownClick = ()=>{
         let newText = text.toLowerCase();
         setText(newText);
+        props.showAlert("converted to lowercase", "success");
     }  
 
     const handleCapitalizeClick = ()=>{
@@ -22,16 +24,20 @@ export default function TextForm(props) {
             .map(word => word.charAt(0).toUpperCase() + word.slice(1))
             .join(' ')
         setText(newText);
+        props.showAlert("converted to capital", "success");
     }
 
     const handleClearClick = ()=>{
         let newText = "";
         setText(newText);
+        props.showAlert("cleared", "success");
     }
 
     const handleCopyClick = ()=>{
         navigator.clipboard.writeText(text);
         alert("text copied");
+        
+        props.showAlert("copied", "success");
 
     }
 
@@ -65,19 +71,19 @@ export default function TextForm(props) {
 
 
 
-            <button className="btn btn-secondary mx-1" onClick={handleUpClick}>
+            <button className="btn btn-primary mx-1" onClick={handleUpClick}>
                 Convert to uppercase
             </button>
-            <button className="btn btn-secondary mx-1" onClick={handleDownClick}>
+            <button className="btn btn-primary mx-1" onClick={handleDownClick}>
                 Convert to lowercase
             </button>
-            <button className="btn btn-secondary mx-1" onClick={handleCapitalizeClick}>
+            <button className="btn btn-primary mx-1" onClick={handleCapitalizeClick}>
                 Convert the first letter of each word to capital
             </button>
-            <button className="btn btn-secondary mx-1" onClick={handleClearClick}>
+            <button className="btn btn-primary mx-1" onClick={handleClearClick}>
                 Clear text
             </button>
-             <button className="btn btn-secondary mx-1" onClick={handleCopyClick}>
+             <button className="btn btn-primary mx-1" onClick={handleCopyClick}>
                 Copy text
             </button>
         </div>

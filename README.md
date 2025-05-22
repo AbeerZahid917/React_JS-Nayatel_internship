@@ -109,3 +109,12 @@ export default App;
 * expanding on the dark mode thing, where how to toggle between light and dark mode on the navbar + the actual toggle switch thingy
 * most of the differences are in APP.js and the textform file, navbar file
 * to change the color of the entire documents bg set and change in APP.js, for the rest use their corresponding files
+
+## Video 13
+* for alert showing and dismissing, first make the alert component and then build the alert func, its pretty simple
+* put an extra alert arrow func + use state to make the alert itself
+* then pass the show alert func to textform so that it can show the alert when it needs to 
+
+* use props.alert && div> etc so that if its null it doesnt give an error aage
+* method to capitalize the first letter in the alert
+* to get alert for all the buttons in the text func, pass showAlert to the textform thing in APP.js and in then add the props.showAlert in each func in textform

@@ -99,3 +99,13 @@ export default App;
 * how to make an about us drop down text sorta thing
 * add btn-secondary etc to change the button color
 * light mode and dark mode using objects + states 
+* remove extra spaces button for text form:
+      const handleExtraSpaces = ()=>{
+        let newText = text.split(/[ ]+/); // this basically finds all the words that have one or more spaces between them and puts them into an array
+        setText(newText.join(" ")) // this then concatenates all the words putting one space between the elements
+      }
+
+## Video 12
+* expanding on the dark mode thing, where how to toggle between light and dark mode on the navbar + the actual toggle switch thingy
+* most of the differences are in APP.js and the textform file, navbar file
+* to change the color of the entire documents bg set and change in APP.js, for the rest use their corresponding files

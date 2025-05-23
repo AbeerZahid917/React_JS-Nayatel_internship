@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        "use strict";
+
+        let a = 34;
+        let b = "this is a string";
+        const c = 45;
+        // c = 56; // c will still be 45 
+        console.log(a); // this will show in the console when you open the live server
+        
+        function hello()
+        {
+            console.log("hey abeer");
+        }
+
+        let obj = 
+        {
+            r: 34,
+            m: 64,
+            func: function my_func(number)
+            {
+                console.log("the number is: " + number)
+            }
+            // to call this func, write obj.func(number)
+        }
+
+        document.addEventListener("click", function click() //what this has done is that when i press the heading, a pop up shows up saying jello
+        {
+            console.log("clicked");
+            // alert("jello") // with this it just sends a pop up
+            let conf = confirm("Are you sure?"); // this sends a pop up that has a ok and cancel pop up 
+            console.log(conf)
+        })
+
+        // for (let index = 0; index < array.length; index++) 
+        // {
+        //     const element = array[index];
+        // }
+
+        let arr = [34, 21, 23];
+
+        console.log(this);
+
+        function my_func(number)
+        {
+            console.log("the number is: " + this); //  this shows the number is undefined
+        }
+       
+        my_func()
+
+        setTimeout(() => {
+            console.log("yayy")
+        }, 3000);
+        console.log("neecha wala")
+
+        
+
+    </script>
+</head>
+<body>
+    <h1>
+        i am learning js
+    </h1>
+</body>
+</html>

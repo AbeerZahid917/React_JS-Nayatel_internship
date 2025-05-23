@@ -140,3 +140,11 @@ export default App;
 ## Video 17
 * npm run build basically builds a folder that can be used by its lonesome to run the entire app using the live server
 * node and npm etc is necessary for building but just need the build folder to run
+* going to github pages and with deploying actions, setting up the stuff, bu first removing all the router related stuff, will put it back later cuz it causes unnecessary masle
+* also remove the about page cuz routing issues and stuff
+* get rid of link from the navbar file too
+
+* then go to deployment create react app and then find github pages
+* add the link for the homepage thing into the packet json thing, then the script files, and basically follow the steps 
+* then run at the end and it should deploy after a bit
+* after that reload the github page and go to settings, pages, then deploy from a branch and gh pages, then save and visit site

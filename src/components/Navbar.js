@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types' // import for the props
-import { Link } from 'react-router-dom';
-
+// import { Link } from 'react-router-dom';
 
 
 
@@ -47,22 +46,22 @@ export default function Navbar(props)
 
 
 
-
   return (
     <nav className={`navbar navbar-expand-lg`} style={getNavMode()}>
       <div className="container-fluid">
-        <Link className={`navbar-brand ${props.mode === 'light'? 'text-black': 'text-white'}`} to="/">{props.title}</Link>
+        <a className={`navbar-brand ${props.mode === 'light'? 'text-black': 'text-white'}`} to="/">{props.title}</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <Link className="nav-item">
-              <Link className={`nav-link active ${props.mode === 'light'? 'text-black': 'text-white'}`} aria-current="page" to="/">Home</Link>
-            </Link>
-            <li className="nav-item">
-              <Link className= {`nav-link ${props.mode === 'light'? 'text-black': 'text-white'}`} to="/about">About TextUtils</Link>
-            </li>
+            <a className="nav-item">
+              {/* <Li className={`nav-link active ${props.mode === 'light'? 'text-black': 'text-white'}`} aria-current="page" tnko="/">Home</Li> */}
+              <a className={`nav-link active ${props.mode === 'light'? 'text-black': 'text-white'}`} aria-current="page" href="#">Home</a>
+            </a>
+            {/* <li className="nav-item">
+              <a className= {`nav-link ${props.mode === 'light'? 'text-black': 'text-white'}`} to="/about">About TextUtils</a>
+            </li> */}
           </ul>
           <form className="d-flex" role="search">
             <input className="form-control me-2" style={getModeForSearchBox()} type="search" placeholder="Search" aria-label="Search"/>

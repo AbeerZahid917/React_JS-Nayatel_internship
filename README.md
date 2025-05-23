@@ -110,7 +110,7 @@ export default App;
 * most of the differences are in APP.js and the textform file, navbar file
 * to change the color of the entire documents bg set and change in APP.js, for the rest use their corresponding files
 
-## Video 13
+## Video 13 - alerts for every action
 * for alert showing and dismissing, first make the alert component and then build the alert func, its pretty simple
 * put an extra alert arrow func + use state to make the alert itself
 * then pass the show alert func to textform so that it can show the alert when it needs to 
@@ -119,14 +119,24 @@ export default App;
 * method to capitalize the first letter in the alert
 * to get alert for all the buttons in the text func, pass showAlert to the textform thing in APP.js and in then add the props.showAlert in each func in textform
 
-## Video 14
+## Video 14 - multiple page modes and text count issue
 * fixed the text issue
 * added multiple different options for bg color
 * I used a different and more long-winded approach and made a drop-down 
 * in video 20, he made squares in the navbar that if you press, the mode changes, a very different implementation, also smaller
 
-## Video 15
+## Video 15 - title and icon
 * changed the title in index.html in content=
 * changed the logo
 * get a png image then convert it to a fav icon, then extract from the zip file you get, then add to the public file and update path in the index.html file
 * if you want (you probably wont want to) to change the title of the page everytime you use a func then just add document.title = "textutils-dark mode enabled" for eg within that function 
+
+## Video 16 - React router
+* why use a react router: we can change a single component keeping everything else the same and no reloading 
+
+* go to react router dom - quick start on the internet
+* npm install react router dom
+
+## Video 17
+* npm run build basically builds a folder that can be used by its lonesome to run the entire app using the live server
+* node and npm etc is necessary for building but just need the build folder to run

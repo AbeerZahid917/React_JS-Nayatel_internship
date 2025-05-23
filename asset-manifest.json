@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/React_JS-Nayatel_internship/static/css/main.76aec624.css",
+    "main.js": "/React_JS-Nayatel_internship/static/js/main.bef4f0ec.js",
+    "static/js/453.02b6ed6f.chunk.js": "/React_JS-Nayatel_internship/static/js/453.02b6ed6f.chunk.js",
+    "index.html": "/React_JS-Nayatel_internship/index.html",
+    "main.76aec624.css.map": "/React_JS-Nayatel_internship/static/css/main.76aec624.css.map",
+    "main.bef4f0ec.js.map": "/React_JS-Nayatel_internship/static/js/main.bef4f0ec.js.map",
+    "453.02b6ed6f.chunk.js.map": "/React_JS-Nayatel_internship/static/js/453.02b6ed6f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76aec624.css",
+    "static/js/main.bef4f0ec.js"
+  ]
+}

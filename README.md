@@ -148,3 +148,24 @@ export default App;
 * add the link for the homepage thing into the packet json thing, then the script files, and basically follow the steps 
 * then run at the end and it should deploy after a bit
 * after that reload the github page and go to settings, pages, then deploy from a branch and gh pages, then save and visit site
+      https://abeerzahid917.github.io/React_JS-Nayatel_internship/
+
+* if it doesnt work, try clearing the cache and then retrying
+
+## Video 18
+* uncommented the commented code
+* remove the homepage thing from packet.json and uninstall gh-pages
+* run npm run build
+
+## Video 19
+* if i ever felt like hosting it on a server or smth; its paid tho
+
+## Video 20
+* height component added to the alert file, so that the alert doesnt ruin the template again and again
+* also changed the layout of about us (the heading) a little bit
+* continuation of if you want your site to be found on the internet
+* if the buttons should be disabled when no text then, 
+      disabled={text.length===0}
+      before classname of the button you want disabled
+
+* also how to completely upload your website to the internet

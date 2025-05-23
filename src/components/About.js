@@ -42,10 +42,29 @@ export default function About(props)
         }
     }
 
+    const getHeaderMode = ()=>{
+        if (props.mode === 'light')
+        {
+            return {backgroundColor: 'white', color: 'black'};
+        }
+        else if (props.mode === 'dark')
+        {
+            return {backgroundColor: 'rgb(74, 74, 74)', color: 'white'};
+        }
+        if (props.mode === 'blue')
+        {
+            return {backgroundColor: 'rgb(44, 32, 117)', color: 'white'};
+        }
+        if (props.mode === 'green')
+        {
+            return {backgroundColor: 'rgb(45, 118, 66)', color: 'white'};
+        }
+    }
+
 
 
   return (
-    <div className='container' style={getMode()}>
+    <div className='container' style={getHeaderMode()}>
         <h2 className="my-2"> About Us </h2>
         <div className="accordion" id="accordionExample" style={getMode()}>
             <div className="accordion-item">

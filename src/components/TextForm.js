@@ -1,11 +1,9 @@
-// import { getMouseEventOptions } from '@testing-library/user-event/dist/utils';
 import React, {useState} from 'react'
 
 
 
 export default function TextForm(props) {
     // FUNCTIONS:
-
     const handleUpClick = ()=>{
         let newText = text.toUpperCase();
         setText(newText);
@@ -67,8 +65,6 @@ export default function TextForm(props) {
         }
     }
 
-
-
     const getModeForTextBox = ()=>{
         if (props.mode === 'light')
         {
@@ -88,14 +84,8 @@ export default function TextForm(props) {
         }
     }
 
-
-
     // HOOK / STATE:
-
     const [text, setText] = useState("Enter text here"); // hook
-    // setText("this will change the text")
-
-
 
 
     return (
@@ -113,19 +103,19 @@ export default function TextForm(props) {
 
 
 
-            <button className="btn mx-1" style={getModeForTextBox()} onClick={handleUpClick}>
+            <button disabled={text.length===0} className="btn mx-1" style={getModeForTextBox()} onClick={handleUpClick}>
                 Convert to uppercase
             </button>
-            <button className="btn mx-1" style={getModeForTextBox()} onClick={handleDownClick}>
+            <button disabled={text.length===0} className="btn mx-1" style={getModeForTextBox()} onClick={handleDownClick}>
                 Convert to lowercase
             </button>
-            <button className="btn mx-1" style={getModeForTextBox()} onClick={handleCapitalizeClick}>
+            <button disabled={text.length===0} className="btn mx-1" style={getModeForTextBox()} onClick={handleCapitalizeClick}>
                 Convert the first letter of each word to capital
             </button>
-            <button className="btn mx-1" style={getModeForTextBox()} onClick={handleClearClick}>
+            <button disabled={text.length===0} className="btn mx-1" style={getModeForTextBox()} onClick={handleClearClick}>
                 Clear text
             </button>
-             <button className="btn mx-1" style={getModeForTextBox()} onClick={handleCopyClick}>
+             <button disabled={text.length===0} className="btn mx-1" style={getModeForTextBox()} onClick={handleCopyClick}>
                 Copy text
             </button>
         </div>
@@ -139,7 +129,7 @@ export default function TextForm(props) {
 
             <h3> Preview </h3>
             <p>
-                {text.length > 0? text: "enter something to preview"}
+                {text.length > 0? text: "Nothing to preview!"}
             </p>
         </div>
         </>

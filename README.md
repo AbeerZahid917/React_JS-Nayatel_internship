@@ -169,3 +169,11 @@ export default App;
       before classname of the button you want disabled
 
 * also how to completely upload your website to the internet
+
+## Video 22 
+* set up a new project
+* app.js imports app.cs and then sends that to index.html that is actually used to make the document
+* to make class based components and code use rcc
+* private variables go before the render wali cheez
+* eg: c = 'john';
+* also {this.c} in the div part prints c

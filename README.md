@@ -177,3 +177,23 @@ export default App;
 * private variables go before the render wali cheez
 * eg: c = 'john';
 * also {this.c} in the div part prints c
+
+## Video 24
+* all the sample output stuff
+* use md for cols
+* my means for y axis and mx means for x axis
+* how to set up the basic layout for the news app
+* stuff like how to make cards/containers for different genres of news and how to arrange them
+* also how to add the proper news in + how to send props to the components to display like the title and description
+* get the url to image from the sample output and then paste in the src part for newsitem
+
+## Video 25
+* btn-sm makes the button smaller
+* image url
+* unique identifier we're using is the url given in the sample output
+* this is not the image url, its another url
+* use .slice(0, whatever character) for a certain amount of characters
+
+  ## Video 26
+  * component did mount is used to get current news
+  * it runs after render even if it is written before

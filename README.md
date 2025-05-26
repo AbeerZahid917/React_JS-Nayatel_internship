@@ -197,3 +197,18 @@ export default App;
   ## Video 26
   * component did mount is used to get current news
   * it runs after render even if it is written before
+  * nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+  * for justified buttons
+      * go to flex in bootstrap
+      * justify content
+      * add in container
+      * will end up on both sides of the page
+  * &larr; displays a left arrow and &rarr; a right arrow
+  * how to bring the website into the next/prev click
+  * how to check if the next page is empty so to not go to that page
+  * you can set how many pages show using &pageSize=
+  * then just divide that by the number of articles you have that you can see in the total samples file thing
+ 
+  * to display a certain amount of articles per page:
+      * first add per page pageSize=20
+      * then, 

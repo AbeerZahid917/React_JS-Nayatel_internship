@@ -106,11 +106,42 @@ export class News extends Component {
     }
     
     async componentDidMount(){
-        let url = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=f29ac701211549ec90b2ef92b8e6f6fc";
+        let url = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=f29ac701211549ec90b2ef92b8e6f6fc&page=1&pageSize=20";
+        let data = await fetch(url);
+        let parsedData = await data.json();
+        console.log(data);
+        this.setState({articles: parsedData.articles, totalResults: parsedData.totalResults})
+    }
+
+    handleNextClick = async ()=>{
+        if (this.state.page + 1 > (Math.ceil(this.state.totalResults/20)))
+        {
+
+        }
+        else 
+        {
+            let url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=f29ac701211549ec90b2ef92b8e6f6fc&page=${this.state.page + 1}&pageSize=20`;
+            let data = await fetch(url);
+            let parsedData = await data.json()
+            console.log(data); 
+            
+            this.setState({
+                page:this.state.page + 1,
+                articles: parsedData.articles
+            })
+        }
+    }
+
+    handlePrevClick = async ()=>{
+        let url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=f29ac701211549ec90b2ef92b8e6f6fc&page=${this.state.page - 1}&pageSize=20`;
         let data = await fetch(url);
         let parsedData = await data.json()
-        console.log(data);
-        this.setState({articles: parsedData.articles})
+        console.log(data); 
+        
+        this.setState({
+            page:this.state.page - 1,
+            articles: parsedData.articles
+        })
     }
 
     render() {
@@ -120,6 +151,11 @@ export class News extends Component {
                 NewsMonkey top headlines
             </h2>
             
+            <div className="container d-flex justify-content-between">
+                 <button disabled={this.state.page <= 1} type="button" className="btn btn-dark my-3" onClick={this.handlePrevClick}>&larr; Previous page</button>
+                 <button disabled={this.state.page > 2} type="button" className="btn btn-dark my-3" onClick={this.handleNextClick}>Next page &rarr;</button>
+            </div>
+
             <div className="row"> 
 
             {this.state.articles.map((element)=>{
@@ -129,9 +165,9 @@ export class News extends Component {
             })}
 
             </div>
-            <div className="container">
-                 <button type="button" class="btn btn-outline-dark">Previous page</button>
-                 <button type="button" class="btn btn-outline-dark">Next page</button>
+            <div className="container d-flex justify-content-between">
+                 <button disabled={this.state.page <= 1} type="button" className="btn btn-dark my-3" onClick={this.handlePrevClick}>&larr; Previous page</button>
+                 <button disabled={this.state.page > 2} type="button" className="btn btn-dark my-3" onClick={this.handleNextClick}>Next page &rarr;</button>
             </div>
         </div>
         )

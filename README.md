@@ -203,7 +203,7 @@ export default App;
       * justify content
       * add in container
       * will end up on both sides of the page
-  * &larr; displays a left arrow and &rarr; a right arrow
+  * T&larr; displays a left arrow and T&rarr; a right arrow (adding the T so that the code can be shown
   * how to bring the website into the next/prev click
   * how to check if the next page is empty so to not go to that page
   * you can set how many pages show using &pageSize=

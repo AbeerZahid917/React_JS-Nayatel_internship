@@ -99,11 +99,20 @@ export class News extends Component {
         super();
         console.log("hello i am a constructor from teh news component")
         this.state = {
-            articles: this.articles,
-            loading: false
+            articles: [],
+            loading: false,
+            page: 1
         }
     }
-        
+    
+    async componentDidMount(){
+        let url = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=f29ac701211549ec90b2ef92b8e6f6fc";
+        let data = await fetch(url);
+        let parsedData = await data.json()
+        console.log(data);
+        this.setState({articles: parsedData.articles})
+    }
+
     render() {
         return (
         <div className="container my-3">
@@ -115,10 +124,14 @@ export class News extends Component {
 
             {this.state.articles.map((element)=>{
                     return <div className="col-md-4" key={element.url}> 
-                        <NewsItem  title={element.title.slice(0,45)} description={element.description.slice(0,88)} imageurl={element.urlToImage} newsUrl={element.url}/>
+                        <NewsItem  title={element.title} description={element.description} imageurl={element.urlToImage} newsUrl={element.url}/>
                     </div>  
             })}
 
+            </div>
+            <div className="container">
+                 <button type="button" class="btn btn-outline-dark">Previous page</button>
+                 <button type="button" class="btn btn-outline-dark">Next page</button>
             </div>
         </div>
         )

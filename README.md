@@ -211,4 +211,8 @@ export default App;
  
   * to display a certain amount of articles per page:
       * first add per page pageSize=20
-      * then, 
+      * then, thats it, it should work
+   
+  ## Video 27
+  * button to disable the next button
+  * if you want to make a spinner thing like when it loads. I didnt make it cuz i dont like it, but deets are in this vid

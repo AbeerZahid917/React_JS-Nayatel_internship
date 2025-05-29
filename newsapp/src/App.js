@@ -12,8 +12,7 @@ import {
 
 export default class App extends Component {
   // this is where the private variables are supposed to be
-  apiKey = process.env.REACT_APP_NEWS_API
-
+  apiKey = "f29ac701211549ec90b2ef92b8e6f6fc";
   state = {
     progress: 0
   }

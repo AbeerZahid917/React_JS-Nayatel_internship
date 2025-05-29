@@ -225,5 +225,10 @@ export default App;
   Route
 } from "react-router-dom"
 
-## Viedo 32
-* 
+## Viedo 36
+* add infinite scroll to the header in the news file
+* go to react infinite scroll
+* go to the live examples and open the sandbox thing
+* get the infinite scroll func + the fetch more func
+* need to make the fetch more func yourself
+* a bunch of other things that can be found in the code

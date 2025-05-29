@@ -225,7 +225,7 @@ export default App;
   Route
 } from "react-router-dom"
 
-## Viedo 36
+## Viedo 35
 * add infinite scroll to the header in the news file
 * go to react infinite scroll
 * go to the live examples and open the sandbox thing
@@ -233,13 +233,23 @@ export default App;
 * need to make the fetch more func yourself
 * a bunch of other things that can be found in the code
 
-## Video 37
+## Video 36
 * go to react loading bar
 * install then use the state wala loading bar
 * set the setprogress thing in news then set it as ten in the updatenews func
 * then at the last line of the func, set setprogress == 100 cuz it shows that its entirely loaded
 
-## Video 38
+## Video 37
 * to hide the api key, set it as a prop in the news file, then add it to where you're sending news in app.js
 * then make a separate file outside of everthing called .env.local cuz this file is included in the git ignore thing
 * then write REACT_APP_NEWS_API=whatever the key is
+
+## Video 39
+* understanding hooks
+* use state = update and set initial value of the state
+* use effect = performs side effect (like component did update) 
+* use context = for context api 
+* use ref = returns a mutable ref object
+
+## Video 40
+* 

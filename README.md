@@ -244,12 +244,16 @@ export default App;
 * then make a separate file outside of everthing called .env.local cuz this file is included in the git ignore thing
 * then write REACT_APP_NEWS_API=whatever the key is
 
-## Video 39
+## Video 38
 * understanding hooks
 * use state = update and set initial value of the state
 * use effect = performs side effect (like component did update) 
 * use context = for context api 
 * use ref = returns a mutable ref object
 
-## Video 40
-* 
+## Video 39
+* first change the declaration of the classes to const arrow funcs and add an export defautlt (component name) at the bottom
+* then remove the render and fix the return
+
+## Video 40 
+*

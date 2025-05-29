@@ -1,0 +1,9 @@
+<Route exact path="/about"/><News pageSize={5} country="us" category="general"/><Route/>business
+<Route exact path="/about"/><News pageSize={5} country="us" category="general"/><Route/>entertainment
+<Route exact path="/about"/><News pageSize={5} country="us" category="general"/><Route/>general
+<Route exact path="/about"/><News pageSize={5} country="us" category="general"/><Route/>health
+<Route exact path="/about"/><News pageSize={5} country="us" category="general"/><Route/>science
+<Route exact path="/about"/><News pageSize={5} country="us" category="general"/><Route/>sports
+<Route exact path="/about"/><News pageSize={5} country="us" category="general"/><Route/>technology
+
+<Route exact path="/about"/><News pageSize={5} country="us" category="general"/><Route/>

@@ -1,99 +1,19 @@
 import React, { Component } from 'react'
 import NewsItem from './NewsItem'
+import PropTypes from 'prop-types'
+
 
 export class News extends Component {
-    articles = [
-        {
-        "source": { "id": "bbc-news", "name": "BBC News" },
-        "author": "BBC News",
-        "title": "France impounds UK vessel accused of illegal fishing",
-        "description": "The British ship is diverted to the port of Boulogne after being stopped by a French patrol boat.",
-        "url": "https://www.bbc.co.uk/news/articles/cn05268j86zo",
-        "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/ad35/live/b1dc0bd0-3915-11f0-8536-ef1d4afa65b5.jpg",
-        "publishedAt": "2025-05-25T04:07:20.5583664Z",
-        "content": "The Foreign Office said it was offering support to a British national in France and was in touch with local authorities.\r\n\"As the vessel remains subject to an ongoing investigation by French fisherie… [+1502 chars]"
-        },
-        {
-        "source": { "id": "bbc-news", "name": "BBC News" },
-        "author": "BBC News",
-        "title": "South Western Railway first rail firm renationalised by Labour",
-        "description": "The first service under new public ownership will be partially operated by a rail replacement bus.",
-        "url": "https://www.bbc.co.uk/news/articles/ceqg73znzzeo",
-        "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/2e3d/live/e1391120-38f2-11f0-8e24-c95314850612.jpg",
-        "publishedAt": "2025-05-25T01:52:23.5127555Z",
-        "content": "Two more rail firms, C2C and Greater Anglia, will be brought into public ownership later this year.\r\nFour major operators have already been brought under public ownership under previous Conservative … [+1775 chars]"
-        },
-        {
-        "source": { "id": "bbc-news", "name": "BBC News" },
-        "author": "BBC News",
-        "title": "Ukraine: Andriy Portnov's murder leaves unanswered questions and little sympathy",
-        "description": "The killing in a Madrid suburb has shocked Ukrainians, but has not triggered an outpouring of grief.",
-        "url": "https://www.bbc.co.uk/news/articles/cpd41g661epo",
-        "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/4fbb/live/fc9d2f40-37ea-11f0-96c3-cf669419a2b0.jpg",
-        "publishedAt": "2025-05-25T01:22:20.7803709Z",
-        "content": "Over a decade, Portnov would sue journalists who wrote negative stories about him through the courts and judges he controlled. His attempts to control the judicial system would lead to him being sanc… [+901 chars]"
-        },
-        {
-        "source": { "id": "bbc-news", "name": "BBC News" },
-        "author": "BBC News",
-        "title": "Nigel Farage's Reform UK commits to reinstating winter fuel payment",
-        "description": "Reform UK also plans to scrap the two-child benefit policy, as part of plans to outflank the government.",
-        "url": "https://www.bbc.co.uk/news/articles/cvg9v0ylv8vo",
-        "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/00dc/live/217763d0-38f9-11f0-8947-7d6241f9fce9.jpg",
-        "publishedAt": "2025-05-25T01:07:20.6553423Z",
-        "content": "The intervention by Nigel Farage - first reported in the Sunday Telegraph, external - will highlight and magnify the increasingly awkward divisions over policy within Labour.\r\nReform UK said they wou… [+2027 chars]"
-        },
-        {
-        "source": { "id": "bbc-news", "name": "BBC News" },
-        "author": "BBC News",
-        "title": "Orthodox Christianity: Young US men joining 'masculine' Russian churches",
-        "description": "A religion with traditions dating back centuries is attracting young American men.",
-        "url": "https://www.bbc.co.uk/news/articles/c30q5l8d4lro",
-        "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/ae73/live/84976680-2671-11f0-8c66-ebf25fc2cfef.jpg",
-        "publishedAt": "2025-05-25T00:52:15.934812Z",
-        "content": "Compared to the millions of worshippers in America's evangelical megachurches, the numbers of Christian Orthodox are tiny - only about one percent of the population. That includes Eastern Orthodoxy, … [+2046 chars]"
-        },
-        {
-        "source": { "id": "bbc-news", "name": "BBC News" },
-        "author": "BBC News",
-        "title": "North Korea detains three officials over warship launch accident, state media says",
-        "description": "Kim Jong Un said those who made \"irresponsible errors\" would be dealt with at a plenary meeting next month.",
-        "url": "https://www.bbc.co.uk/news/articles/cx279v4z9lzo",
-        "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/c091/live/1a026ba0-38f3-11f0-8947-7d6241f9fce9.png",
-        "publishedAt": "2025-05-25T00:37:19.2162409Z",
-        "content": "On Friday, KCNA said the manager of the shipyard, Hong Kil Ho, had been summoned by law enforcers.\r\nSatellite images showed the vessel lying on its side covered by large blue tarpaulins, and a portio… [+1058 chars]"
-        },
-        {
-        "source": { "id": "bbc-news", "name": "BBC News" },
-        "author": "BBC News",
-        "title": "King's invite to Canada sends a message to Trump - and the world",
-        "description": "Canada once downplayed the monarchy. Now, it is leaning on it to assert its sovereignty.",
-        "url": "https://www.bbc.co.uk/news/articles/c04erp9gxkyo",
-        "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/b18c/live/67b6d410-37ec-11f0-b03d-23713b9a6cf0.jpg",
-        "publishedAt": "2025-05-24T23:52:19.0917631Z",
-        "content": "Carney's invite to King Charles III signals that his government will be one that is much more supportive of the Crown, Mr Vovk said, marking \"a very different tone\" from previous Liberals.\r\nA British… [+1347 chars]"
-        },
-        {
-        "source": { "id": "bbc-news", "name": "BBC News" },
-        "author": "BBC News",
-        "title": "Newspaper headlines: Child benefit cap 'to be lifted' and fires 'twist'",
-        "description": "Plans to lift limits on child benefit payments and calls to restore the winter fuel allowance lead the papers.",
-        "url": "https://www.bbc.co.uk/news/articles/cvg547nlyxpo",
-        "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/b0f3/live/284fac00-38ed-11f0-96c3-cf669419a2b0.png",
-        "publishedAt": "2025-05-24T23:37:20.7315768Z",
-        "content": "Image caption, The Sunday People leads with warnings to young people abroad from a former drug mule, following recent arrests of two British women. Natalie Welsh, who was jailed for smuggling drugs, … [+119 chars]"
-        },
-        {
-        "source": { "id": "bbc-news", "name": "BBC News" },
-        "author": "BBC News",
-        "title": "Unfinished housing sites may be taken off developers under new rules",
-        "description": "The plans form part of a drive to boost housebuilding in England to 1.5 million new homes by 2029.",
-        "url": "https://www.bbc.co.uk/news/articles/cj42wz92rl0o",
-        "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/09c9/live/ff19f130-38bd-11f0-8c94-950112f6e649.jpg",
-        "publishedAt": "2025-05-24T22:22:24.0594272Z",
-        "content": "The government says that 1.3 million families are on social housing waiting lists, while a record number - including 160,000 children - are in temporary accommodation. Millions of people also cannot … [+1488 chars]"
-        }
-    ]
+    static defaultProps = {
+        country: 'in',
+        pageSize: 8
+    }
+    
+    static propType = {
+        country: PropTypes.string,
+        pageSize: PropTypes.number,
+        category: PropTypes.string,
+    }
 
     constructor(){
         super();
@@ -106,7 +26,7 @@ export class News extends Component {
     }
     
     async componentDidMount(){
-        let url = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=f29ac701211549ec90b2ef92b8e6f6fc&page=1&pageSize=20";
+        let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=f29ac701211549ec90b2ef92b8e6f6fc&page=1&pageSize=${this.props.pageSize}`;
         let data = await fetch(url);
         let parsedData = await data.json();
         console.log(data);
@@ -114,13 +34,13 @@ export class News extends Component {
     }
 
     handleNextClick = async ()=>{
-        if (this.state.page + 1 > (Math.ceil(this.state.totalResults/20)))
+        if (this.state.page + 1 > (Math.ceil(this.state.totalResults/this.props.pageSize)))
         {
 
         }
         else 
         {
-            let url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=f29ac701211549ec90b2ef92b8e6f6fc&page=${this.state.page + 1}&pageSize=20`;
+            let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=f29ac701211549ec90b2ef92b8e6f6fc&page=${this.state.page + 1}&pageSize=${this.props.pageSize}`;
             let data = await fetch(url);
             let parsedData = await data.json()
             console.log(data); 
@@ -133,7 +53,7 @@ export class News extends Component {
     }
 
     handlePrevClick = async ()=>{
-        let url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=f29ac701211549ec90b2ef92b8e6f6fc&page=${this.state.page - 1}&pageSize=20`;
+        let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=f29ac701211549ec90b2ef92b8e6f6fc&page=${this.state.page - 1}&pageSize=${this.props.pageSize}`;
         let data = await fetch(url);
         let parsedData = await data.json()
         console.log(data); 
@@ -147,27 +67,27 @@ export class News extends Component {
     render() {
         return (
         <div className="container my-3">
-            <h2 className="mb-4"> 
+            <h1 className="text-center">
                 NewsMonkey top headlines
-            </h2>
-            
+            </h1>
+        
             <div className="container d-flex justify-content-between">
-                 <button disabled={this.state.page <= 1} type="button" className="btn btn-dark my-3" onClick={this.handlePrevClick}>&larr; Previous page</button>
-                 <button disabled={this.state.page > 2} type="button" className="btn btn-dark my-3" onClick={this.handleNextClick}>Next page &rarr;</button>
+                 <button disabled={this.state.page <= 1} type="button" className="btn btn-dark my-4" onClick={this.handlePrevClick}>&larr; Previous page</button>
+                 <button disabled={this.state.page + 1 > (Math.ceil(this.state.totalResults/this.props.pageSize))} type="button" className="btn btn-dark my-4" onClick={this.handleNextClick}>Next page &rarr;</button>
             </div>
-
+ 
             <div className="row"> 
 
             {this.state.articles.map((element)=>{
                     return <div className="col-md-4" key={element.url}> 
-                        <NewsItem  title={element.title} description={element.description} imageurl={element.urlToImage} newsUrl={element.url}/>
+                        <NewsItem  title={element.title} description={element.description} imageurl={element.urlToImage} newsUrl={element.url} author={element.author? element.author: "Unknown"} date={element.publishedAt} />
                     </div>  
             })}
 
             </div>
             <div className="container d-flex justify-content-between">
                  <button disabled={this.state.page <= 1} type="button" className="btn btn-dark my-3" onClick={this.handlePrevClick}>&larr; Previous page</button>
-                 <button disabled={this.state.page > 2} type="button" className="btn btn-dark my-3" onClick={this.handleNextClick}>Next page &rarr;</button>
+                 <button disabled={this.state.page + 1 > (Math.ceil(this.state.totalResults/this.props.pageSize))} type="button" className="btn btn-dark my-3" onClick={this.handleNextClick}>Next page &rarr;</button>
             </div>
         </div>
         )

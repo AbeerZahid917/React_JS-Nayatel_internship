@@ -256,4 +256,5 @@ export default App;
 * then remove the render and fix the return
 
 ## Video 40 
-*
+* add fixed-top to the navbar file, right before navbar-expand to make it so the navbar shows no matter how far you scroll
+* marginTop: 'x no of pixels' to make the heading go down in style={{}}

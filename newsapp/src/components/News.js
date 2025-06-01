@@ -5,7 +5,7 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 
 
 
-const News = (props) =>
+const News =(props) =>
 {    
     const [articles, setArticles] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -57,8 +57,8 @@ const News = (props) =>
 
     return (
         <>
-        <div className="container my-3">
-            <h1 className="text-center">
+        <div className="container my-4">
+            <h1 className="text-center" style={{marginTop: '90px'}}>
                 NewsMonkey - top headlines on {props.category}
             </h1>
             
